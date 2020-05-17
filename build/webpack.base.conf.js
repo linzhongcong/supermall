@@ -9,7 +9,6 @@ function resolve (dir) {
 }
 
 
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -26,6 +25,11 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': resolve('src'),
+      "assets": resolve("src/assets"),
+      "common": resolve("src/common"),
+      "components": resolve("src/components"),
+      "network": resolve("src/network"),
+      "views": resolve( "src/views"),
     }
   },
   module: {
@@ -78,4 +82,5 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   }
-}
+};
+

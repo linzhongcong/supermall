@@ -1,0 +1,69 @@
+@import "./normalize.css";
+
+/*:root=>获取根元素-HTML*/
+:root{
+  --color-text: #fff;
+  --color-high-text: #ff5777;  /*项目整体色调*/
+  --color-tint: #ff8198;  /*导航色调*/
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+body{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","w微软雅黑",Arial,sans-serif;
+  user-select: none;  /*禁止用户鼠标在页面上选中中文字/图片等*/
+  -webkit-tap-highlight-color: transparent;  /*webkit是苹果浏览器引擎，tap点击，highlight背景高度，color颜色*/
+  background: var(--color-text);
+/*rem VM/vh*/
+  width: 100vw;
+}
+
+a{
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.clear-flx::after{
+  clear: both;
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-flx{
+  zoom: 1;
+}
+/*文字排版*/
+.f12{font-size:12px}
+.fb{font-weight:bold}
+.t2{text-indent:2em}
+.lh{line-height:100%}
+.an{text-decoration:none;}
+
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.fl{float:left;display:inline}
+.fr{float:right;display:inline}
+.oh{overflow: hidden;*zoom: 1;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+
+/* html */
+.clearfix{height:1%}
+db{display:block}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.dn{display:none}
+
+/*长度高度*/
+.w{width:100%}
+.h{height:100%}
+
+/*版心-根据项目去设置*/
+.div-in{width: 1200px; margin: 0 auto;}
