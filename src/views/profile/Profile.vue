@@ -82,7 +82,7 @@
     background-color: #fff;
     margin-right: 1px;
     text-align: center;
-    margin-left: -80px;
+    margin-left: -20px;
   }
 
   .account-item:last-of-type {
